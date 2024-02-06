@@ -1,0 +1,68 @@
+:root {
+  --body-background: #fff;
+  --banner-background: #fff;
+  --input-background: rgb(233, 233, 233);
+  --game-background: rgb(255, 255, 255);
+  --footerCard-background: rgba(255, 255, 255, 1);
+  --num-background: #fff;
+
+  --body-color: #000;
+  --link-color: rgb(35, 138, 255);
+  --footer-text-color: #0DD0BA;
+  --sim-text-color: rgba(112, 112, 112, 1);
+  --arrow-color: #fff;
+  --footer-logo-color: #0DD0BA;
+
+  --input-searchIcon:rgb(255, 177, 9);
+  --input-border: #ccc;
+
+  --image-filter: invert(0);
+  
+}
+
+[data-theme='dark'] {
+  --body-background: rgba(14, 18, 25, 1);
+  --banner-background: rgba(14, 18, 25, 1);
+  --game-background: rgba(32, 36, 52, 1);
+  --footerCard-background: rgba(32, 36, 52, 1);
+  --input-background: rgba(32, 36, 52, 1);
+  --num-background: #000;
+
+  
+  --body-color: #000;
+  --link-color:  rgba(13, 208, 186, 1);
+  --footer-text-color: #fff;
+  --sim-text-color: #fff;
+  --arrow-color:rgba(32, 36, 52, 1);
+  --footer-logo-color: #fff;
+
+  --image-filter: invert(1);
+}
+
+* {
+  transition: all .3s ease-in-out;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+html {
+  color: white;
+  font-weight: bold;
+}
+a {
+  text-decoration: none;
+}
+
+

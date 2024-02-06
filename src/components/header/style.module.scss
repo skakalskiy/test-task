@@ -1,0 +1,182 @@
+.header {
+    max-width: 1920px;
+    padding: 30px 0 40px;
+    background: var(--body-background);
+}
+
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.leftSide {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.title {
+    filter: var(--image-filter);
+}
+
+.itemBlock {
+    display: flex;
+    color: var(--link-color);
+}
+
+.item {
+    margin-left: 25px;
+
+    &:hover {
+        color: aqua;
+        transform: scale(1.1);
+    }
+}
+
+
+.searchContainer {
+    width: 200px;
+}
+
+.searchInput {
+    padding: 8px 10px;
+    border-radius: 20px;
+    border: none;
+    max-width: 175px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: var(--input-background);
+}
+
+.searchIcons {
+    position: absolute;
+    transform: translate(-115%, 15%);
+    color: var(--input-searchIcon);
+    cursor: pointer;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.burgerMenuContainer {
+    position: relative;
+    color: var(--link-color);
+    overflow: hidden;
+}
+
+.burgerBtn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+
+.burgerMenu {
+    position: fixed;
+    top: 40px;
+    left: 0;
+    width: 100vw;
+    height: calc(100vh - 60px);
+    background-color: var(--body-background);
+    display: flex;
+    flex-direction: column;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease;
+    z-index: 99;
+}
+
+.burgerMenu.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menuContent {
+    padding: 10px;
+}
+
+.menuContent p {
+    margin: 0;
+    padding: 8px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menuContent p:hover {
+    background: var(--body-background);
+}
+
+.closeButton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    cursor: pointer;
+    filter: var(--image-filter);
+    color: var(--link-color);
+}
+
+.itemBlockBurger {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--link-color);
+    gap: 40px;
+}
+
+.searchInputBur {
+    padding: 8px 10px;
+    border: 1px solid var(--input-border);
+    border-radius: 20px;
+    max-width: 768px;
+    width: 100%;
+    box-sizing: border-box;
+    background: --blue-background;
+}
+
+.searchContainerBur {
+    position: relative;
+    max-width: 768px;
+    width: 100%;
+}
+
+.headerBurgerMenu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .headerBurgerMenu {
+        display: block;
+    }
+
+    .itemBlock,
+    .searchContainer {
+        display: none;
+    }
+
+    .burgerMenuContainer {
+        overflow: visible;
+    }
+}
+
+@media (max-width: 380px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
